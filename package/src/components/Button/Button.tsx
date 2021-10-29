@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "../../../styles/global.css";
 
 export interface ButtonProps {
@@ -17,7 +17,7 @@ export interface ButtonProps {
   /**
    * Button contents
    */
-  label: string;
+  children: ReactNode;
   /**
    * Optional click handler
    */
@@ -32,7 +32,7 @@ const Button = ({
   backgroundColor,
   size = "medium",
   onClick,
-  label,
+  children,
 }: ButtonProps) => {
   const modeClass = primary
     ? "text-white bg-blue-400"
@@ -54,7 +54,7 @@ const Button = ({
       style={backgroundColor ? { backgroundColor } : {}}
       onClick={onClick}
     >
-      {label}
+      {children}
     </button>
   );
 };
