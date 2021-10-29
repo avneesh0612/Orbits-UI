@@ -9,7 +9,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-4xl font-bold">Let&apos;s build Flux UI</h1>
+      <h1 className="text-4xl font-bold">Let&apos;s build Orbits UI</h1>
     </div>
   );
 }
