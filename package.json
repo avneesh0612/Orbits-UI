@@ -16,7 +16,7 @@
     "lint": "eslint --fix '{src}/**/*.{js,jsx,ts,tsx}'",
     "lint:check": "eslint '{src}/**/*.{js,jsx,ts,tsx}'",
     "prepare": "husky install",
-    "pre-commit": "npm run format && git add -A ."
+    "pre-commit": "yarn run format && yarn build && git add -A ."
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
