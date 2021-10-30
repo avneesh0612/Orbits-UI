@@ -5,9 +5,9 @@ import Button, { ButtonProps } from "./Button";
 
 export default {
   title: "Components/Button",
-component: Button,
-argTypes: {
-backgroundColor: { control: 'color' },
+  component: Button,
+  argTypes: {
+    backgroundColor: { control: "color" },
   },
 } as Meta;
 
@@ -19,4 +19,4 @@ export const Primary = Template.bind({});
 Primary.args = { children: "Primary 😃", size: "large" };
 
 export const Secondary = Template.bind({});
-Secondary.args = { ...Primary.args, primary: false, label: "Secondary 😇" };
+Secondary.args = { ...Primary.args, primary: false, children: "Secondary 😇" };

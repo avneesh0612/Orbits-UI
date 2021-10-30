@@ -27,16 +27,8 @@ export interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-const Button = ({
-  primary = true,
-  backgroundColor,
-  size = "medium",
-  onClick,
-  children,
-}: ButtonProps) => {
-  const modeClass = primary
-    ? "text-white bg-blue-400"
-    : "text-gray-600 bg-transparent shadow-xl";
+const Button = ({ primary = true, backgroundColor, size = "medium", onClick, children }: ButtonProps) => {
+  const modeClass = primary ? "text-white-200  bg-blue-500" : "text-gray-600 bg-transparent shadow-lg";
 
   const sizeClass =
     size === "small"
@@ -50,7 +42,7 @@ const Button = ({
   return (
     <button
       type="button"
-      className={`font-semibold rounded-full cursor-pointer leading-1 ${modeClass} ${sizeClass}`}
+      className={`font-semibold  rounded-full hover:scale-110 cursor-pointer leading-1 ${modeClass} ${sizeClass}`}
       style={backgroundColor ? { backgroundColor } : {}}
       onClick={onClick}
     >
