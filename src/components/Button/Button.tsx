@@ -28,7 +28,7 @@ export interface ButtonProps {
  * Primary UI component for user interaction
  */
 const Button = ({ primary = true, backgroundColor, size = "medium", onClick, children }: ButtonProps) => {
-  const modeClass = primary ? "text-white-200  bg-blue-500" : "text-gray-600 bg-transparent shadow-lg";
+  const modeClass = primary ? "text-white-200  bg-blue-500" : "text-blue-800 bg-blue-100 shadow-lg";
 
   const sizeClass =
     size === "small"
