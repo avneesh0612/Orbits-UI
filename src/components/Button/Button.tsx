@@ -37,15 +37,17 @@ const Button = ({
   children,
   className,
 }: ButtonProps) => {
-  const modeClass = primary ? "text-white-200  bg-blue-500" : "text-blue-800 bg-blue-100 shadow-lg";
+  const modeClass = primary
+    ? "text-white-100  bg-blue-500"
+    : "text-blue-500 bg-white border-2 border-blue-500";
 
   const sizeClass =
     size === "small"
-      ? "text-sm py-2 px-3"
+      ? "text-sm py-2 px-4"
       : size === "medium"
-      ? "text-md py-3 px-4"
+      ? "text-md py-2 px-6"
       : size === "large"
-      ? "text-lg py-4 px-5"
+      ? "text-lg py-3 px-8"
       : "";
 
   return (
