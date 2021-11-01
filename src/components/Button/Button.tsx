@@ -53,7 +53,7 @@ const Button = ({
   return (
     <button
       type="button"
-      className={`focus:ring-4 font-semibold  rounded-full hover:scale-110 cursor-pointer leading-1 ${modeClass} ${sizeClass} ${className}`}
+      className={`focus:ring-4  font-semibold  duration-150 ring-blue-300  rounded-full hover:scale-110 cursor-pointer leading-1 ${modeClass} ${sizeClass} ${className}`}
       style={backgroundColor ? { backgroundColor } : {}}
       onClick={onClick}
     >

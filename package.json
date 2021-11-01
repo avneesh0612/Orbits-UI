@@ -9,6 +9,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "storybook": "start-storybook -p 6006",
+    "dev": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "rollup -c",
     "format": "prettier --write \"{src,styles}/**/*.{js,jsx,ts,tsx,css,scss,json,yaml,md}\"",
