@@ -2,29 +2,15 @@ import React, { ReactNode } from "react";
 import "../../../styles/global.css";
 
 export interface AvatarProps {
-  /**
-   * What background color to use
-   */
   backgroundColor?: string;
-  /**
-   * How large should the Avatar be?
-   */
   size?: "small" | "medium" | "large";
-
-  /**
-   * Optional click handler
-   */
   onClick?: (event: any) => void;
-
   avatarColor?: string;
-
   src?: string;
   alt?: string;
+  className?: string;
 }
 
-/**
- * Primary UI component for user interaction
- */
 const Avatar = ({
   backgroundColor,
   size = "medium",
@@ -32,6 +18,7 @@ const Avatar = ({
   avatarColor = "#F1F6FC",
   src,
   alt,
+  className,
 }: AvatarProps) => {
   const sizeClass =
     size === "small" ? "w-10 h-10" : size === "medium" ? "w-12 h-12" : size === "large" ? "w-16 h-16" : "";
@@ -41,7 +28,7 @@ const Avatar = ({
 
   return (
     <div
-      className={`flex items-center justify-center text-white-200  bg-blue-300  rounded-full hover:scale-110 cursor-pointer ${sizeClass}`}
+      className={`flex items-center justify-center text-white-200  bg-blue-300  rounded-full hover:scale-110 cursor-pointer ${sizeClass} ${className}`}
       style={backgroundColor ? { backgroundColor } : {}}
       onClick={onClick}
     >

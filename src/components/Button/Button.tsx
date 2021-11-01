@@ -22,12 +22,21 @@ export interface ButtonProps {
    * Optional click handler
    */
   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+
+  className?: string;
 }
 
 /**
  * Primary UI component for user interaction
  */
-const Button = ({ primary = true, backgroundColor, size = "medium", onClick, children }: ButtonProps) => {
+const Button = ({
+  primary = true,
+  backgroundColor,
+  size = "medium",
+  onClick,
+  children,
+  className,
+}: ButtonProps) => {
   const modeClass = primary ? "text-white-200  bg-blue-500" : "text-blue-800 bg-blue-100 shadow-lg";
 
   const sizeClass =
@@ -42,7 +51,7 @@ const Button = ({ primary = true, backgroundColor, size = "medium", onClick, chi
   return (
     <button
       type="button"
-      className={`font-semibold  rounded-full hover:scale-110 cursor-pointer leading-1 ${modeClass} ${sizeClass}`}
+      className={`font-semibold  rounded-full hover:scale-110 cursor-pointer leading-1 ${modeClass} ${sizeClass} ${className}`}
       style={backgroundColor ? { backgroundColor } : {}}
       onClick={onClick}
     >
