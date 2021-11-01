@@ -17,14 +17,12 @@ export interface InputProps {
 const Input = ({
   primary = true,
   placeholder,
-  color,
+  color = "bg-blue-500",
   size = "medium",
   onChange,
   value,
   className,
 }: InputProps) => {
-  const modeClass = primary ? "text-white-200  bg-blue-500" : "text-blue-800 bg-blue-100 shadow-lg";
-
   const sizeClass =
     size === "small"
       ? "text-sm py-2 px-3"
@@ -36,7 +34,7 @@ const Input = ({
 
   return (
     <input
-      className={`font-semibold  rounded-full hover:scale-110 cursor-pointer leading-1 ${modeClass} ${sizeClass} ${className}`}
+      className={`font-semibold text-${color}  rounded-xl hover:scale-110 cursor-pointer bg-white focus:outline-none text-gray-700 placeholder-white-500 border-white-500 border-2 focus:border-blue-500 ${sizeClass} ${className}`}
       value={value}
       onChange={onChange}
       placeholder={placeholder}
