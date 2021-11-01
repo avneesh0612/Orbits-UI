@@ -56,7 +56,6 @@ const Button = ({
       className={`focus:ring-4 font-semibold  rounded-full hover:scale-110 cursor-pointer leading-1 ${modeClass} ${sizeClass} ${className}`}
       style={backgroundColor ? { backgroundColor } : {}}
       onClick={onClick}
-
     >
       {children}
     </button>
