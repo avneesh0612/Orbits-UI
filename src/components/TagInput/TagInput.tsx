@@ -4,9 +4,6 @@ import "../../../styles/global.css";
 export interface TagInputProps {
   placeholder?: string;
   color?: string;
-  primary?: boolean;
-  value?: string;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   size?: "small" | "medium" | "large";
   className?: string;
 }
@@ -15,12 +12,9 @@ export interface TagInputProps {
  * Primary UI component for user interaction
  */
 const TagInput = ({
-  primary = true,
   placeholder = "Press enter to add tags",
   color = "bg-blue-500",
   size = "medium",
-  onChange,
-  value,
   className,
 }: TagInputProps) => {
   const sizeClass =
