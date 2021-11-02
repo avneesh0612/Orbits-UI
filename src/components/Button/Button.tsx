@@ -45,9 +45,9 @@ const Button = ({
     size === "small"
       ? "text-sm py-2 px-4"
       : size === "medium"
-      ? "text-md py-2 px-6"
+      ? "text-md py-3 px-6"
       : size === "large"
-      ? "text-lg py-3 px-8"
+      ? "text-lg py-4 px-8"
       : "";
 
   return (
