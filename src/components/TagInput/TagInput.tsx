@@ -16,7 +16,7 @@ export interface TagInputProps {
  */
 const TagInput = ({
   primary = true,
-  placeholder,
+  placeholder = "Press enter to add tags",
   color = "bg-blue-500",
   size = "medium",
   onChange,
@@ -65,7 +65,7 @@ const TagInput = ({
       <input
         type="text"
         onKeyUp={(event) => (event.key === "Enter" ? addTags(event) : null)}
-        placeholder="Press enter to add tags"
+        placeholder={placeholder}
         className={`font-semibold text-${color}  rounded-xl hover:scale-110 cursor-text bg-white focus:outline-none text-gray-700 placeholder-gray-500 border-white-500  focus:border-none ${sizeClass} ${className}`}
       />
     </div>
