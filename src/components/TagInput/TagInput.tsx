@@ -50,11 +50,11 @@ const TagInput = ({
         {tags.map((tag: any, index: any) => (
           <li
             key={index}
-            className="flex items-center space-x-2 justify-between h-8 px-2 min-w-min bg-gray-500 rounded-lg"
+            className="flex items-center space-x-2 justify-between h-8 px-2 min-w-min bg-white-200 text-black rounded-lg"
           >
-            <span className="mt-1 text-lg text-white-100"># {tag}</span>
+            <span className="mt-1 text-lg"># {tag}</span>
             <span
-              className="rounded-full text-white-100 cursor-pointer p-2 flex items-center justify-center bg-white/10 w-6 h-6 text-center"
+              className="rounded-full cursor-pointer p-2 flex items-center justify-center w-6 h-6 text-center"
               onClick={() => removeTags(index)}
             >
               x
@@ -66,7 +66,7 @@ const TagInput = ({
         type="text"
         onKeyUp={(event) => (event.key === "Enter" ? addTags(event) : null)}
         placeholder="Press enter to add tags"
-        className={`font-semibold text-${color}  rounded-xl hover:scale-110 cursor-text bg-white focus:outline-none text-gray-700 placeholder-white-500 border-white-500  focus:border-none ${sizeClass} ${className}`}
+        className={`font-semibold text-${color}  rounded-xl hover:scale-110 cursor-text bg-white focus:outline-none text-gray-700 placeholder-gray-500 border-white-500  focus:border-none ${sizeClass} ${className}`}
       />
     </div>
   );
