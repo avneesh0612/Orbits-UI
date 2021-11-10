@@ -26,8 +26,6 @@ jobs:
 
       - name: Formatting
         run: yarn run format:check
-      - name: Chromatic
-        run: npm run chromatic
 
   build:
     runs-on: ubuntu-latest
