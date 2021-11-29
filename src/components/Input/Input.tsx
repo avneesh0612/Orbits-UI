@@ -34,6 +34,7 @@ const Input = ({
 
   return (
     <input
+      aria-label="input"
       className={`font-semibold text-${color}  rounded-xl hover:scale-110 cursor-text bg-white focus:outline-none text-gray-700 placeholder-white-500 border-white-500 border-2 focus:border-blue-500 ${sizeClass} ${className}`}
       value={value}
       onChange={onChange}

@@ -24,6 +24,10 @@ export interface ButtonProps {
   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 
   className?: string;
+  autosave?: "false" | "true";
+  autoFocus?: boolean;
+  disabled?: boolean;
+  title?: string;
 }
 
 /**
@@ -36,6 +40,11 @@ const Button = ({
   onClick,
   children,
   className,
+  autosave = "false",
+  autoFocus = false,
+  disabled = false,
+  title = "button",
+  ...otherProps
 }: ButtonProps) => {
   const modeClass = primary
     ? "text-white-100  bg-blue-500"
@@ -52,7 +61,14 @@ const Button = ({
 
   return (
     <button
+      aria-label={title}
+      role="button"
       type="button"
+      autoFocus={autoFocus}
+      autoSave={autosave}
+      disabled={disabled}
+      {...otherProps}
+      name={title}
       className={`focus:ring-4  font-semibold  duration-150 ring-blue-300  rounded-full hover:scale-110 cursor-pointer leading-1 ${modeClass} ${sizeClass} ${className}`}
       style={backgroundColor ? { backgroundColor } : {}}
       onClick={onClick}

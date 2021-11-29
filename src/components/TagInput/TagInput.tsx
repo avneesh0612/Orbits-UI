@@ -44,11 +44,11 @@ const TagInput = ({
         {tags.map((tag: any, index: any) => (
           <li
             key={index}
-            className="flex items-center space-x-2 justify-between h-8 px-2 min-w-min bg-white-200 text-black rounded-lg"
+            className="flex items-center justify-between h-8 px-2 space-x-2 text-black rounded-lg min-w-min bg-white-200"
           >
             <span className="mt-1 text-lg"># {tag}</span>
             <span
-              className="rounded-full cursor-pointer p-2 flex items-center justify-center w-6 h-6 text-center"
+              className="flex items-center justify-center w-6 h-6 p-2 text-center rounded-full cursor-pointer"
               onClick={() => removeTags(index)}
             >
               x
