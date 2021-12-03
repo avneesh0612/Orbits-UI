@@ -1,0 +1,41 @@
+name: Bug report 🐛
+description: Found a bug ? You can report them by using this issue template
+title: '[BUG] <report>'
+labels: ['bug']
+
+body:
+  - type: textarea
+    id: report
+    attributes:
+      label: Describe the bug
+      description: A brief description of the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+    validations:
+      required: false    
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Add any other information about the problem here.
+    validations:
+      required: false
