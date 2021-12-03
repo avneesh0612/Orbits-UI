@@ -3,3 +3,16 @@
 @import "tailwindcss/utilities";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 1s infinite linear;
+}
