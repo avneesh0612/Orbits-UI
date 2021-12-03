@@ -32,7 +32,7 @@ const Spinner = ({ className, size = "small" }: SpinnerProps) => {
   return (
     <div
       aria-label="input"
-      className={`border-4 rounded-full bg-transparent transform spin ${colorClass} ${sizeClass} ${className}`}
+      className={`border-4 rounded-full bg-transparent transform spin ${sizeClass} ${className}`}
       style={{ borderTopColor: "transparent" }}
     >
       {" "}
