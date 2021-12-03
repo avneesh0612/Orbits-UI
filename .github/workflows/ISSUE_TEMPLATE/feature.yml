@@ -1,0 +1,48 @@
+name: Feature request ✨
+description: Got any suggestions/ideas ? Suggest them using this issue template
+title: '[FEAT] <report>'
+labels: ['enhancement']
+
+body:
+  - type: textarea
+    id: report
+    attributes:
+      label: Describe the feature
+      description: A brief description of the feature/suggestion.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to a problem? Please describe.
+      description: A clear and concise description of what the problem is.
+    validations:
+      required: false
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like
+      description: A clear and concise description of what you want to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Describe alternatives you've considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+    validations:
+      required: false    
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Add any other information about the problem here.
+    validations:
+      required: false
