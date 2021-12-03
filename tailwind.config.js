@@ -50,6 +50,10 @@ module.exports = {
           500: "#B4B4B4",
         },
       },
+
+      fontFamily: {
+        poppins: "Poppins"
+      }
     },
   },
   variants: {
