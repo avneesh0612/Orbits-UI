@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import "../../../styles/global.css";
 
 export interface SpinnerProps {
-  //   color?: "primary" | "success" | "danger";
+  color?: "primary" | "secondary";
   className?: string;
   size?: "small" | "medium" | "large";
 }
@@ -10,7 +10,7 @@ export interface SpinnerProps {
 /**
  * Primary UI component for user interaction
  */
-const Spinner = ({ className, size = "small" }: SpinnerProps) => {
+const Spinner = ({ className, size = "small", color = "primary" }: SpinnerProps) => {
   const sizeClass =
     size === "small"
       ? "w-8 h-8 border-3"
@@ -20,19 +20,17 @@ const Spinner = ({ className, size = "small" }: SpinnerProps) => {
       ? "w-12 h-12"
       : "w-8 h-8";
 
-  //   const colorClass =
-  //     color === "primary"
-  //       ? "border-purple-500"
-  //       : color === "success"
-  //       ? "border-green-600"
-  //       : color === "danger"
-  //       ? "border-red-700"
-  //       : "border-blue-600";
+  const colorClass =
+    color === "primary"
+      ? "border-purple-500"
+      : color === "secondary"
+      ? "border-yellow-500"
+      : "border-pruple-500";
 
   return (
     <div
       aria-label="input"
-      className={`border-4 rounded-full bg-transparent transform spin ${sizeClass} ${className}`}
+      className={`border-4 rounded-full bg-transparent transform spin ${sizeClass} ${colorClass} ${className}`}
       style={{ borderTopColor: "transparent" }}
     >
       {" "}
