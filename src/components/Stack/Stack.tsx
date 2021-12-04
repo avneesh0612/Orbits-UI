@@ -2,22 +2,36 @@ import React, { ReactNode } from "react";
 import "../../../styles/global.css";
 
 export interface StackProps {
-  direction: "row" | "column";
+  gap: "sm" | "md" | "lg" | "xl" | "2xl";
+  direction: "row" | "col";
   className?: string;
 }
 
 /**
  * Primary UI component for user interaction
  */
-const Stack = ({ className, direction = "row" }: StackProps) => {
-  const dirClass = direction === "row" ? "flex-row" : direction === "column" ? "flex-col" : "flex-row";
+const Stack = ({ className, direction = "col", gap = "sm" }: StackProps) => {
+  const dirClass = direction === "row" ? "flex-row" : direction === "col" ? "flex-col" : "flex-row";
+
+  const gapClass =
+    gap === "sm"
+      ? "gap-2"
+      : gap === "md"
+      ? "gap-4"
+      : gap === "lg"
+      ? "gap-8"
+      : gap === "xl"
+      ? "gap-10"
+      : gap === "2xl"
+      ? "gap-12"
+      : "";
 
   return (
-    <div className={`flex ${dirClass} ${className}`}>
+    <div className={`flex ${dirClass} ${className} ${gapClass}`}>
       {" "}
-      <p>Hio</p>
-      <p>hello</p>
-      <p>hoi</p>
+      <p className="px-64 py-2 bg-purple-400 rounded-full"></p>
+      <p className="px-64 py-2 bg-purple-400 rounded-full"></p>
+      <p className="px-64 py-2 bg-purple-400 rounded-full"></p>
     </div>
   );
 };
