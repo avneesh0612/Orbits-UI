@@ -1,7 +1,7 @@
 name: Bug report 🐛
 description: Found a bug ? You can report them by using this issue template
-title: '[BUG] <report>'
-labels: ['bug']
+title: "[BUG] <report>"
+labels: ["bug"]
 
 body:
   - type: textarea
@@ -31,7 +31,7 @@ body:
       label: Screenshots
       description: If applicable, add screenshots to help explain your problem.
     validations:
-      required: false    
+      required: false
   - type: textarea
     id: additional
     attributes:

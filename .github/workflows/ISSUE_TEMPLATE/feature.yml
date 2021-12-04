@@ -1,7 +1,7 @@
 name: Feature request ✨
 description: Got any suggestions/ideas ? Suggest them using this issue template
-title: '[FEAT] <report>'
-labels: ['enhancement']
+title: "[FEAT] <report>"
+labels: ["enhancement"]
 
 body:
   - type: textarea
@@ -38,7 +38,7 @@ body:
       label: Screenshots
       description: If applicable, add screenshots to help explain your problem.
     validations:
-      required: false    
+      required: false
   - type: textarea
     id: additional
     attributes:
