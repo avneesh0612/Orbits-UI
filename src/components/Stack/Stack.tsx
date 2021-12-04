@@ -26,14 +26,7 @@ const Stack = ({ className, direction = "col", gap = "sm" }: StackProps) => {
       ? "gap-12"
       : "";
 
-  return (
-    <div className={`flex ${dirClass} ${className} ${gapClass}`}>
-      {" "}
-      <p className="px-64 py-2 bg-purple-400 rounded-full"></p>
-      <p className="px-64 py-2 bg-purple-400 rounded-full"></p>
-      <p className="px-64 py-2 bg-purple-400 rounded-full"></p>
-    </div>
-  );
+  return <div className={`flex ${dirClass} ${className} ${gapClass}`}> </div>;
 };
 
 export default Stack;
