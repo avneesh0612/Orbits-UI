@@ -12,4 +12,4 @@ Orbits UI will provide with components, styled with [Tailwind CSS](https://tailw
 
 Other than making common component accessible out of the box, we also aim to make it easier to build applications by providing some UI components like Modals, Popovers, Tooltips, Menus etc.
 
-Orbits UI storybook - https://617d2a56fe98bd0048fc93db-pzhxhdzuip.chromatic.com/
+Orbits UI storybook - https://617d2a56fe98bd0048fc93db-gfnhdmmapx.chromatic.com
