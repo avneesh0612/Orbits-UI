@@ -1,6 +1,6 @@
 {
   "name": "@orbits-ui/react",
-  "version": "0.0.9",
+  "version": "0.0.10
   "description": "A React Component Library made with Tailwind CSS",
   "repository": "git@github.com:avneesh0612/Orbits-UI.git",
   "license": "MIT",
