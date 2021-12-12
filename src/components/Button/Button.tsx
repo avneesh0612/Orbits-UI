@@ -24,7 +24,7 @@ export interface ButtonProps {
   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 
   className?: string;
-  autosave?: "false" | "true";
+  autoSave?: "false" | "true";
   autoFocus?: boolean;
   disabled?: boolean;
   title?: string;
@@ -40,7 +40,7 @@ const Button = ({
   onClick,
   children,
   className,
-  autosave = "false",
+  autoSave = "false",
   autoFocus = false,
   disabled = false,
   title = "button",
@@ -65,7 +65,7 @@ const Button = ({
       role="button"
       type="button"
       autoFocus={autoFocus}
-      autoSave={autosave}
+      autoSave={autoSave}
       disabled={disabled}
       {...otherProps}
       name={title}

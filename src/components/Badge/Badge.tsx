@@ -12,7 +12,8 @@ export interface BadgeProps {
  * Primary UI component for user interaction
  */
 const Badge = ({ color = "primary", value = "DEFAULT", className, size = "small" }: BadgeProps) => {
-  const sizeClass = size === "small" ? "w-20" : size === "medium" ? "w-24" : size === "large" ? "w-28" : "";
+  const sizeClass =
+    size === "small" ? "w-20 py-2" : size === "medium" ? "w-24 py-3" : size === "large" ? "w-28 py-4" : "";
 
   const colorClass =
     color === "primary"
@@ -28,9 +29,8 @@ const Badge = ({ color = "primary", value = "DEFAULT", className, size = "small"
   return (
     <div
       aria-label="input"
-      className={`font-poppins font-semibold text-black rounded-md p-[1px] w-20 flex justify-center items-center cursor-pointer ${colorClass} ${className} ${sizeClass}`}
+      className={`font-poppins font-semibold text-black rounded-md w-20 flex justify-center items-center cursor-pointer ${colorClass} ${className} ${sizeClass}`}
     >
-      {" "}
       {value}
     </div>
   );
