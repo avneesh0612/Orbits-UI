@@ -14,6 +14,17 @@
         "design",
         "code"
       ]
+    },
+    {
+      "login": "avneesh0612",
+      "name": "Avneesh Agarwal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76690419?v=4",
+      "profile": "https://www.avneesh.tech/",
+      "contributions": [
+        "infra",
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
