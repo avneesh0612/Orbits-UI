@@ -1,6 +1,6 @@
 # Orbits UI 🚀
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Orbits UI is a React Component Library which uses [Tailwind CSS](https://tailwindcss.com/) under the hood.
@@ -27,6 +27,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://twitter.com/kr_anurag_"><img src="https://avatars.githubusercontent.com/u/77309809?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anurag</b></sub></a><br /><a href="#design-kr-anurag" title="Design">🎨</a> <a href="https://github.com/avneesh0612/Orbits-UI/commits?author=kr-anurag" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.avneesh.tech/"><img src="https://avatars.githubusercontent.com/u/76690419?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Avneesh Agarwal</b></sub></a><br /><a href="#infra-avneesh0612" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/avneesh0612/Orbits-UI/commits?author=avneesh0612" title="Code">💻</a> <a href="#design-avneesh0612" title="Design">🎨</a></td>
   </tr>
 </table>
 
