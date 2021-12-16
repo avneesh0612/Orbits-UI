@@ -1,6 +1,6 @@
 # Orbits UI 🚀
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Orbits UI is a React Component Library which uses [Tailwind CSS](https://tailwindcss.com/) under the hood.
@@ -29,6 +29,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://twitter.com/kr_anurag_"><img src="https://avatars.githubusercontent.com/u/77309809?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anurag</b></sub></a><br /><a href="#design-kr-anurag" title="Design">🎨</a> <a href="https://github.com/avneesh0612/Orbits-UI/commits?author=kr-anurag" title="Code">💻</a></td>
     <td align="center"><a href="https://www.avneesh.tech/"><img src="https://avatars.githubusercontent.com/u/76690419?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Avneesh Agarwal</b></sub></a><br /><a href="#infra-avneesh0612" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/avneesh0612/Orbits-UI/commits?author=avneesh0612" title="Code">💻</a> <a href="#design-avneesh0612" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/AnishDe12020"><img src="https://avatars.githubusercontent.com/u/63192115?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anish De</b></sub></a><br /><a href="https://github.com/avneesh0612/Orbits-UI/commits?author=AnishDe12020" title="Code">💻</a> <a href="https://github.com/avneesh0612/Orbits-UI/commits?author=AnishDe12020" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://lu.ma/divya"><img src="https://avatars.githubusercontent.com/u/56636487?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Divya Kelaskar</b></sub></a><br /><a href="https://github.com/avneesh0612/Orbits-UI/commits?author=divyakelaskar" title="Documentation">📖</a></td>
   </tr>
 </table>
 
