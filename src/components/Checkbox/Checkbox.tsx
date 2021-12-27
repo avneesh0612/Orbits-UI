@@ -25,13 +25,8 @@ const Checkbox = ({
   defaultChecked = false,
 }: CheckProps) => {
   const sizeClass: string =
-    size == "small"
-      ? "h-[15px] w-[15px]"
-      : size == "medium"
-      ? "h-[20px] w-[20px]"
-      : size == "large"
-      ? "h-[25px] w-[25px]"
-      : "";
+    size == "small" ? "h-6 w-6" : size == "medium" ? "h-8 w-8" : size == "large" ? "h-10 w-10" : "";
+
   const textClass: string =
     textSize == "small" ? "text-sm" : textSize == "medium" ? "text-md" : textSize == "large" ? "text-lg" : "";
   const checkActive: string =
@@ -45,20 +40,20 @@ const Checkbox = ({
       ? "bg-gray-300 border-gray-300"
       : "";
 
-  const [check, setcheck] = useState<boolean>(defaultChecked);
+  const [check, setCheck] = useState<boolean>(defaultChecked);
 
   return (
     <label className={`${textClass} ${disabled ? "text-gray-200" : "text-black"}`}>
       <input
         type="checkbox"
-        onChange={() => checked == false && setcheck(!check)}
+        onChange={() => checked == false && setCheck(!check)}
         disabled={disabled}
         checked={checked}
         className="appearance-none"
         defaultChecked={defaultChecked}
       />
       <svg
-        className={`inline-block border-2 ${sizeClass} mr-[10px] ${
+        className={`inline-block border-2 ${sizeClass} mr-3 ${
           disabled == false ? "cursor-pointer" : ""
         } rounded 
 					${check || checked ? checkActive : "bg-white border-gray-200"}
@@ -70,7 +65,6 @@ const Checkbox = ({
       >
         <path d="M1 4.5L5 9L14 1" strokeWidth="2" stroke={check || checked ? "#fff" : "none"} />
       </svg>
-
       {label}
     </label>
   );
