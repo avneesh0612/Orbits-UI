@@ -1,6 +1,6 @@
 # Orbits UI 🚀
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Orbits UI is a React Component Library which uses [Tailwind CSS](https://tailwindcss.com/) under the hood.
@@ -31,6 +31,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/AnishDe12020"><img src="https://avatars.githubusercontent.com/u/63192115?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anish De</b></sub></a><br /><a href="https://github.com/avneesh0612/Orbits-UI/commits?author=AnishDe12020" title="Code">💻</a> <a href="https://github.com/avneesh0612/Orbits-UI/commits?author=AnishDe12020" title="Documentation">📖</a></td>
     <td align="center"><a href="https://lu.ma/divya"><img src="https://avatars.githubusercontent.com/u/56636487?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Divya Kelaskar</b></sub></a><br /><a href="https://github.com/avneesh0612/Orbits-UI/commits?author=divyakelaskar" title="Documentation">📖</a></td>
     <td align="center"><a href="https://dann.digital"><img src="https://avatars.githubusercontent.com/u/29425781?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Debbie Dann</b></sub></a><br /><a href="https://github.com/avneesh0612/Orbits-UI/commits?author=hellodeborahuk" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/diganta413"><img src="https://avatars.githubusercontent.com/u/69595396?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Diganta Ghosh</b></sub></a><br /><a href="https://github.com/avneesh0612/Orbits-UI/commits?author=diganta413" title="Code">💻</a></td>
   </tr>
 </table>
 
