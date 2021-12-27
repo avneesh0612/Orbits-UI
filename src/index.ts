@@ -8,5 +8,6 @@ import TagInput from "./components/TagInput";
 import Stack from "./components/Stack";
 import Badge from "./components/Badge";
 import Spinner from "./components/Spinner";
+import Checkbox from "./components/Checkbox";
 
-export { Button, Modal, Input, Avatar, TagInput, Stack, Badge, Spinner };
+export { Button, Modal, Input, Avatar, TagInput, Stack, Badge, Spinner, Checkbox };
