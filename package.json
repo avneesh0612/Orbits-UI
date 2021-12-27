@@ -23,9 +23,9 @@
     "chromatic": "npx chromatic --project-token=5ba96cb81b5e"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.0",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
-    "@babel/core": "^7.16.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@storybook/addon-actions": "^6.4.9",
@@ -45,8 +45,8 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.31.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "standard-version": "^9.3.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
     "typescript": "^4.5.3"
   },
   "peerDependencies": {
