@@ -36,7 +36,9 @@ const Modal = ({
   children,
   className,
 }: ModalProps) => {
-  const modeClass = primary ? "text-white-200  bg-blue-500" : "text-blue-800 bg-blue-100 shadow-lg";
+  const modeClass = primary
+    ? "text-white-200 bg-purple-500 shadow-lg"
+    : "text-blue-800 bg-blue-100 shadow-lg";
 
   const sizeClass =
     size === "small"

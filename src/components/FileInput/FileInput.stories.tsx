@@ -1,19 +1,19 @@
 import React from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import { Story } from "@storybook/react";
-import Spinner, { SpinnerProps } from "./Spinner";
+import FileInput, { FileInputProps } from "./FileInput";
 
 export default {
-  title: "Components/Spinner",
-  component: Spinner,
+  title: "Components/FileInput",
+  component: FileInput,
   argTypes: {
-    color: { control: "color" },
+    backgroundColor: { control: "color" },
   },
 } as Meta;
 
 // Create a master template for mapping args to render the Input component
-const Template: Story<SpinnerProps> = (args) => <Spinner {...args} />;
+const Template: Story<FileInputProps> = (args) => <FileInput {...args} />;
 
 // Reuse that template for creating different stories
 export const Primary = Template.bind({});
-Primary.args = { size: "small" };
+Primary.args = {};

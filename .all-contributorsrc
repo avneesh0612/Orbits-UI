@@ -1,0 +1,64 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "kr-anurag",
+      "name": "Anurag",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77309809?v=4",
+      "profile": "http://twitter.com/kr_anurag_",
+      "contributions": [
+        "design",
+        "code"
+      ]
+    },
+    {
+      "login": "avneesh0612",
+      "name": "Avneesh Agarwal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76690419?v=4",
+      "profile": "https://www.avneesh.tech/",
+      "contributions": [
+        "infra",
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "AnishDe12020",
+      "name": "Anish De",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63192115?v=4",
+      "profile": "https://github.com/AnishDe12020",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "divyakelaskar",
+      "name": "Divya Kelaskar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56636487?v=4",
+      "profile": "https://lu.ma/divya",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "hellodeborahuk",
+      "name": "Debbie Dann",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29425781?v=4",
+      "profile": "https://dann.digital",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Orbits-UI",
+  "projectOwner": "avneesh0612",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
