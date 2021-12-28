@@ -11,5 +11,19 @@ import Spinner from "./components/Spinner";
 import Checkbox from "./components/Checkbox";
 import FileInput from "./components/FileInput";
 import Slider from "./components/Slider";
+import { Divider } from "./components/Divider";
 
-export { Button, Modal, Input, Avatar, TagInput, Stack, Badge, Spinner, Checkbox, FileInput, Slider };
+export {
+  Button,
+  Modal,
+  Input,
+  Avatar,
+  TagInput,
+  Stack,
+  Badge,
+  Spinner,
+  Checkbox,
+  FileInput,
+  Slider,
+  Divider,
+};

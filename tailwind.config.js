@@ -2,6 +2,9 @@ module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      height: {
+        xm: "2px",
+      },
       colors: {
         blue: {
           100: "#F1F6FC",
