@@ -11,7 +11,8 @@ import Spinner from "./components/Spinner";
 import Checkbox from "./components/Checkbox";
 import FileInput from "./components/FileInput";
 import Slider from "./components/Slider";
-import { Divider } from "./components/Divider";
+import Divider from "./components/Divider";
+import Switch from "./components/Switch";
 
 export {
   Button,
@@ -26,4 +27,5 @@ export {
   FileInput,
   Slider,
   Divider,
+  Switch,
 };
