@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-import "../../../styles/global.css";
 import "../../../styles/switch.css";
 
 export interface SwitchProps {

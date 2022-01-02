@@ -23,11 +23,11 @@
     "chromatic": "npx chromatic --project-token=5ba96cb81b5e"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.5",
-    "@commitlint/cli": "^16.0.0",
+    "@babel/core": "^7.16.7",
+    "@commitlint/cli": "^16.0.1",
     "@commitlint/config-conventional": "^16.0.0",
     "@rollup/plugin-commonjs": "^21.0.1",
-    "@rollup/plugin-node-resolve": "^13.1.1",
+    "@rollup/plugin-node-resolve": "^13.1.2",
     "@storybook/addon-actions": "^6.4.9",
     "@storybook/addon-essentials": "^6.4.9",
     "@storybook/addon-links": "^6.4.9",

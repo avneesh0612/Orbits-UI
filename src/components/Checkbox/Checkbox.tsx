@@ -49,7 +49,7 @@ const Checkbox = ({
         onChange={() => checked == false && setCheck(!check)}
         disabled={disabled}
         checked={checked}
-        className="appearance-none"
+        className="hidden"
         defaultChecked={defaultChecked}
       />
       <svg
