@@ -1,11 +1,18 @@
 import React, { ReactNode } from "react";
 
 export interface DividerProps {
+  backgroundColor?: string;
   className?: string;
 }
 
-const Divider = ({ className }: DividerProps) => {
-  return <div className="w-full h-xm bg-gray-100 rounded-full" aria-label="divider"></div>;
+const Divider = ({ className, backgroundColor }: DividerProps) => {
+  return (
+    <div
+      className={`bg-gray-300 h-xm ${className}`}
+      aria-label="divider"
+      style={backgroundColor ? { backgroundColor } : {}}
+    ></div>
+  );
 };
 
 export default Divider;
