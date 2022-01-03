@@ -7,7 +7,7 @@ export interface CheckProps {
   label?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   className?: string;
-  color?: "primary" | "success" | "secondary" | "default";
+  color?: string;
   disabled?: boolean;
   checked?: boolean;
   defaultChecked?: boolean;
@@ -19,7 +19,7 @@ const Checkbox = ({
   onChange,
   className,
   textSize,
-  color = "primary",
+  color = "#1A6EFC",
   disabled = false,
   checked = false,
   defaultChecked = false,
@@ -29,16 +29,6 @@ const Checkbox = ({
 
   const textClass: string =
     textSize == "small" ? "text-sm" : textSize == "medium" ? "text-md" : textSize == "large" ? "text-lg" : "";
-  const checkActive: string =
-    color == "primary"
-      ? "bg-blue-500 border-blue-500"
-      : color == "success"
-      ? "bg-green-500 border-green-500"
-      : color == "secondary"
-      ? "bg-pink-800 border-pink-800"
-      : color == "default"
-      ? "bg-gray-300 border-gray-300"
-      : "";
 
   const [check, setCheck] = useState<boolean>(defaultChecked);
 
@@ -55,13 +45,15 @@ const Checkbox = ({
       <svg
         className={`inline-block border-2 ${sizeClass} mr-3 ${
           disabled == false ? "cursor-pointer" : ""
-        } rounded 
-					${check || checked ? checkActive : "bg-white border-gray-200"}
-					${checked && disabled ? "bg-gray-100 border-gray-100" : ""}
-					mb-1 transition-colors ease-out`}
+        } rounded mb-1 transition-colors ease-out`}
         aria-hidden="true"
         viewBox="0 0 15 11"
         fill="none"
+        style={
+          check || checked
+            ? { background: color, borderColor: color }
+            : { background: "transparent", borderColor: "lightgray" }
+        }
       >
         <path d="M1 4.5L5 9L14 1" strokeWidth="2" stroke={check || checked ? "#fff" : "none"} />
       </svg>
