@@ -10,7 +10,16 @@ export interface SliderProps {
 }
 
 const Slider = ({ primary = true, className, min, max, range }: SliderProps) => {
-  return <input type="range" aria-label="input" className={className} min={min} max={max} step={range} />;
+  return (
+    <input
+      type="range"
+      aria-label="input"
+      className={`range ${className}`}
+      min={min}
+      max={max}
+      step={range}
+    />
+  );
 };
 
 export default Slider;
