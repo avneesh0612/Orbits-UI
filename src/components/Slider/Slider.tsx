@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-import "../../../styles/global.css";
 import "../../../styles/slider.css";
 
 export interface SliderProps {

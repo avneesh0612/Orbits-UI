@@ -1,10 +1,7 @@
 import React, { ReactNode } from "react";
-import "../../../styles/global.css";
 
 export interface InputProps {
   placeholder?: string;
-  color?: string;
-  primary?: boolean;
   value?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   size?: "small" | "medium" | "large";
@@ -14,28 +11,20 @@ export interface InputProps {
 /**
  * Primary UI component for user interaction
  */
-const Input = ({
-  primary = true,
-  placeholder,
-  color = "bg-blue-500",
-  size = "medium",
-  onChange,
-  value,
-  className,
-}: InputProps) => {
+const Input = ({ placeholder, size = "medium", onChange, value, className }: InputProps) => {
   const sizeClass =
     size === "small"
-      ? "text-sm py-2 px-3"
+      ? "text-sm py-6 px-3"
       : size === "medium"
-      ? "text-md py-3 px-4"
+      ? "text-md py-8 px-4"
       : size === "large"
-      ? "text-lg py-4 px-5"
+      ? "text-lg py-10 px-5"
       : "";
 
   return (
     <input
       aria-label="input"
-      className={`font-semibold text-${color}  rounded-xl hover:scale-110 cursor-text bg-white focus:outline-none text-gray-700 placeholder-white-500 border-white-500 border-2 focus:border-blue-500 ${sizeClass} ${className}`}
+      className={`font-semibold w-60 rounded-xl cursor-text focus:outline-none border-white-500 border-2 bg-blue-300 focus:border-blue-500 ${sizeClass} ${className}`}
       value={value}
       onChange={onChange}
       placeholder={placeholder}

@@ -6,9 +6,7 @@ import Checkbox, { CheckProps } from "./Checkbox";
 export default {
   title: "Components/Checkbox",
   component: Checkbox,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
+  argTypes: {},
 } as Meta;
 
 // Create a master template for mapping args to render the Avatar component

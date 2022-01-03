@@ -1,6 +1,5 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import "../../../styles/global.css";
-
 export interface SpinnerProps {
   color?: string;
   className?: string;
@@ -23,13 +22,14 @@ const Spinner = ({ className, size = "small", color = "purple" }: SpinnerProps) 
   return (
     <div
       aria-label="input"
-      className={`border-4 rounded-full bg-transparent transform spin ${sizeClass} ${className}`}
+      className={`animate-spin inline-block w-8 h-8 border-4 rounded-full  ${sizeClass} ${className}`}
       style={{
         borderTopColor: "transparent",
         borderLeftColor: color,
         borderRightColor: color,
         borderBottomColor: color,
       }}
+      role="status"
     ></div>
   );
 };

@@ -1,5 +1,4 @@
 import React, { ReactNode, useState } from "react";
-import "../../../styles/global.css";
 
 export interface TagInputProps {
   placeholder?: string;
