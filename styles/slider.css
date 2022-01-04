@@ -19,7 +19,8 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
 }
 
-input[type="range"]::-webkit-slider-thumb:active {
+input[type="range"]::-webkit-slider-thumb:active,
+input[type="range"]::-webkit-slider-thumb:focus {
   background: #fff;
   border: 3px solid #664aff;
 }
