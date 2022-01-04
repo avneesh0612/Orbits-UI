@@ -16,4 +16,4 @@ const Template: Story<InputProps> = (args) => <Input {...args} />;
 
 // Reuse that template for creating different stories
 export const Primary = Template.bind({});
-Primary.args = { size: "large", placeholder: "Type here" };
+Primary.args = { placeholder: "Type here" };

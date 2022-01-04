@@ -15,7 +15,7 @@ export interface InputProps {
 const Input = ({
   placeholder,
   onChange,
-  size,
+  size = "small",
   colorScheme = "primary",
   type = "text",
   isDisabled = false,
