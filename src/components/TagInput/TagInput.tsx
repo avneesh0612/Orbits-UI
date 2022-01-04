@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React, { useState } from "react";
 
 export interface TagInputProps {
   placeholder?: string;
@@ -26,13 +26,13 @@ const TagInput = ({
       : "";
 
   const [tags, setTags] = useState<any>([]);
-  const removeTags = (indexToRemove: any) => {
-    setTags([...tags.filter((_: any, index: any) => index !== indexToRemove)]);
+  const removeTags = (indexToRemove: number) => {
+    setTags([...tags.filter((index: number) => index !== indexToRemove)]);
   };
 
   const addTags = (event: any) => {
     if (event.target.value !== "") {
-      setTags([...tags, event.target.value]);
+      setTags([...tags, String(event.target.value)]);
       event.target.value = "";
     }
   };
@@ -40,7 +40,7 @@ const TagInput = ({
   return (
     <div className="flex items-center w-full py-3 pl-2 text-white placeholder-gray-100 border-2 group focus-within:border-blue-500 border-white/30 focus:outline-none bg-[#171717] rounded-xl">
       <ul className="flex items-center justify-center space-x-2">
-        {tags.map((tag: any, index: any) => (
+        {tags.map((tag: string, index: number) => (
           <li
             key={index}
             className="flex items-center justify-between h-8 px-2 space-x-2 text-black rounded-lg min-w-min bg-white-200"

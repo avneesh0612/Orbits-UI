@@ -1,15 +1,14 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import "../../../styles/slider.css";
 
 export interface SliderProps {
-  primary?: boolean;
   className?: string;
   min?: number;
   max?: number;
   range?: number;
 }
 
-const Slider = ({ primary = true, className, min, max, range }: SliderProps) => {
+const Slider = ({ className, min, max, range }: SliderProps) => {
   return (
     <input
       type="range"

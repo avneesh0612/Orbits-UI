@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 
 export interface BadgeProps {
   color?: "primary" | "success" | "danger";
@@ -23,7 +23,7 @@ const Badge = ({ color = "primary", value = "DEFAULT", className, size = "small"
       ? "bg-red-300 text-red-700"
       : "bg-white-200";
 
-  value === "" ? (value = "PRIMARY") : (value = value);
+  value === "" ? (value = "PRIMARY") : value;
 
   return (
     <div

@@ -1,9 +1,9 @@
-import React, { ReactNode } from "react";
+import React from "react";
 
 export interface AvatarProps {
   backgroundColor?: string;
   size?: "small" | "medium" | "large";
-  onClick?: (event: any) => void;
+  onClick?: (event: unknown) => void;
   avatarColor?: string;
   src?: string;
   alt?: string;

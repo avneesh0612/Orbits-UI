@@ -16,7 +16,6 @@ export interface CheckProps {
 const Checkbox = ({
   size = "medium",
   label,
-  onChange,
   className,
   textSize,
   color = "#1A6EFC",
@@ -43,7 +42,7 @@ const Checkbox = ({
         defaultChecked={defaultChecked}
       />
       <svg
-        className={`inline-block border-2 ${sizeClass} mr-3 ${
+        className={`inline-block border-2 ${className} ${sizeClass} mr-3 ${
           disabled == false ? "cursor-pointer" : ""
         } rounded mb-1 transition-colors ease-out`}
         aria-hidden="true"
