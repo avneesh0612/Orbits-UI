@@ -1,6 +1,5 @@
 import "../styles/global.css";
 import Button from "./components/Button";
-import Modal from "./components/Modal";
 import Input from "./components/Input";
 import Avatar from "./components/Avatar";
 import TagInput from "./components/TagInput";
@@ -12,4 +11,4 @@ import Slider from "./components/Slider";
 import Divider from "./components/Divider";
 import Switch from "./components/Switch";
 
-export { Button, Modal, Input, Avatar, TagInput, Stack, Badge, Spinner, Checkbox, Slider, Divider, Switch };
+export { Button, Input, Avatar, TagInput, Stack, Badge, Spinner, Checkbox, Slider, Divider, Switch };
