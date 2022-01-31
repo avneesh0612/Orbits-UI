@@ -28,7 +28,7 @@ const Badge = ({ color = "primary", value = "DEFAULT", className, size = "small"
   return (
     <div
       aria-label="input"
-      className={`font-poppins font-semibold text-black rounded-md w-20 flex justify-center items-center cursor-pointer ${colorClass} ${className} ${sizeClass}`}
+      className={`flex w-20 cursor-pointer items-center justify-center rounded-md font-poppins font-semibold text-black ${colorClass} ${className} ${sizeClass}`}
     >
       {value}
     </div>
