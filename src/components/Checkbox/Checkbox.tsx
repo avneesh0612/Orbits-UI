@@ -44,7 +44,7 @@ const Checkbox = ({
       <svg
         className={`inline-block border-2 ${className} ${sizeClass} mr-3 ${
           disabled == false ? "cursor-pointer" : ""
-        } rounded mb-1 transition-colors ease-out`}
+        } mb-1 rounded transition-colors ease-out`}
         aria-hidden="true"
         viewBox="0 0 15 11"
         fill="none"

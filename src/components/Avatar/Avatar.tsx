@@ -27,12 +27,12 @@ const Avatar = ({
 
   return (
     <div
-      className={`flex items-center justify-center text-white-200  bg-blue-300  rounded-full hover:scale-110 cursor-pointer ${sizeClass} ${className}`}
+      className={`flex cursor-pointer items-center justify-center  rounded-full  bg-blue-300 text-white-200 hover:scale-110 ${sizeClass} ${className}`}
       style={backgroundColor ? { backgroundColor } : {}}
       onClick={onClick}
     >
       {src ? (
-        <img className="w-full h-full rounded-full" src={src} alt={alt ? alt : "pfp"} />
+        <img className="h-full w-full rounded-full" src={src} alt={alt ? alt : "pfp"} />
       ) : (
         <svg className={avatarSizeClass} viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path

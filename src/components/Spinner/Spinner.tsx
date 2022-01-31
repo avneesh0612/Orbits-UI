@@ -22,7 +22,7 @@ const Spinner = ({ className, size = "small", color = "purple" }: SpinnerProps) 
   return (
     <div
       aria-label="input"
-      className={`animate-spin inline-block w-8 h-8 border-4 rounded-full  ${sizeClass} ${className}`}
+      className={`inline-block h-8 w-8 animate-spin rounded-full border-4  ${sizeClass} ${className}`}
       style={{
         borderTopColor: "transparent",
         borderLeftColor: color,

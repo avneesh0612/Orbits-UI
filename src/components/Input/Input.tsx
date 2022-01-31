@@ -42,7 +42,7 @@ const Input = ({
   return (
     <input
       aria-label="input"
-      className={`font-medium text-gray-300 rounded-md outline-none w-full border-2 hover:shadow-inner-sm ${colorClass} ${sizeClass}`}
+      className={`outline-none hover:shadow-inner-sm w-full rounded-md border-2 font-medium text-gray-300 ${colorClass} ${sizeClass}`}
       type={type}
       disabled={isDisabled}
       readOnly={isReadOnly}

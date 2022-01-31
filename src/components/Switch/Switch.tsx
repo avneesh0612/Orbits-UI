@@ -8,10 +8,10 @@ export interface SwitchProps {
 
 const Switch = ({ className, label }: SwitchProps) => {
   return (
-    <label htmlFor="toggle-example" className={`${className} flex items-center cursor-pointer relative mb-4`}>
+    <label htmlFor="toggle-example" className={`${className} relative mb-4 flex cursor-pointer items-center`}>
       <input type="checkbox" id="toggle-example" className="sr-only" />
-      <div className="toggle-bg bg-gray-100 border-2 border-gray-100 h-6 w-11 rounded-full"></div>
-      <span className="ml-3 text-gray-900 text-sm font-medium">{label}</span>
+      <div className="toggle-bg h-6 w-11 rounded-full border-2 border-gray-100 bg-gray-100"></div>
+      <span className="ml-3 text-sm font-medium text-gray-900">{label}</span>
     </label>
   );
 };

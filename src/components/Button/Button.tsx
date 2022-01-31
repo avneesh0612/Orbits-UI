@@ -68,7 +68,7 @@ const Button = ({
       disabled={disabled}
       {...otherProps}
       name={title}
-      className={`focus:ring-4  font-semibold  duration-150 ring-blue-300  rounded-full hover:scale-110 cursor-pointer leading-1 ${modeClass} ${sizeClass} ${className}`}
+      className={`leading-1  cursor-pointer  rounded-full font-semibold  ring-blue-300 duration-150 hover:scale-110 focus:ring-4 ${modeClass} ${sizeClass} ${className}`}
       style={backgroundColor ? { backgroundColor } : {}}
       onClick={onClick}
     >
