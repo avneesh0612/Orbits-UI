@@ -41,6 +41,8 @@
     "autoprefixer": "^10",
     "babel-loader": "^8.2.3",
     "chromatic": "^6.3.3",
+    "commitlint": "^16.1.0",
+    "commitlint-config-gitmoji": "^2.2.5",
     "eslint": "^8.6.0",
     "eslint-plugin-react": "^7.28.0",
     "husky": "^7.0.4",
